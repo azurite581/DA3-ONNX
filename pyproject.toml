@@ -1,0 +1,17 @@
+[project]
+name = "da3-onnx"
+version = "0.1.0"
+description = "ONNX conversion for Depth Anything 3"
+readme = "README.md"
+requires-python = ">=3.10, <3.13"
+dependencies = [
+    # my fork of depth-anything-3 with onnx export support
+    "depth-anything-3 @ git+https://github.com/azurite581/Depth-Anything-3.git@for-onnx",
+    "torch==2.11.0",
+    "addict",
+    "onnx",
+    "onnxscript",
+    "onnxruntime",
+    "onnxconverter-common",
+    "onnxsim"
+]
